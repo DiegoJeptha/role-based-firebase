@@ -11,6 +11,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthTokenHttpInteceptorProvider } from './http-interceptors/auth-token.interceptor';
+import { UsersModule } from './users/users.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AuthTokenHttpInteceptorProvider } from './http-interceptors/auth-token.
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     HttpClientModule,
+    UsersModule,
     NgbModule,
     ReactiveFormsModule
   ],
